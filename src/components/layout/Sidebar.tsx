@@ -25,7 +25,7 @@ const navItems = [
 
 export const Sidebar = () => {
   return (
-    <aside className="w-64 bg-gray-50 border-r border-gray-200 min-h-screen">
+    <aside className="w-64 bg-background border-r border-border min-h-screen">
       <nav className="p-4 space-y-2">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -37,8 +37,8 @@ export const Sidebar = () => {
                 cn(
                   "flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                   isActive
-                    ? "bg-blue-50 text-blue-700 border border-blue-200"
-                    : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
                 )
               }
             >

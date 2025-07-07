@@ -5,13 +5,13 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export const Header = () => {
   return (
-    <header className="h-16 border-b border-gray-200 bg-white px-6 flex items-center justify-between">
+    <header className="h-16 border-b border-border bg-background px-6 flex items-center justify-between">
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">SC</span>
+          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <span className="text-primary-foreground font-bold text-sm">SC</span>
           </div>
-          <h1 className="text-xl font-bold text-gray-900">Supply Chain AI</h1>
+          <h1 className="text-xl font-bold text-foreground">Supply Chain AI</h1>
         </div>
       </div>
       
